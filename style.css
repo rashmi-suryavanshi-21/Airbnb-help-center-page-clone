@@ -1,0 +1,405 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.feature ,.login-singup, .started, .articles{
+    padding: 0% 8% 0% 8%;
+}
+.header-content {
+    padding: 1.8% 23% 2% 2%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 50px;
+    align-items: center;
+    margin: 2%;
+    font-size: 2rem;
+}
+.left {
+    display: flex;
+}
+.logo img {
+    height: 48px;
+    margin-right: 10px;
+}
+.right {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    right: 10px;
+    padding-right: 3%;
+}
+.r-right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 48px;
+    border: 1px solid rgb(224, 218, 218);
+    border-radius: 30px;
+    padding: 2%;
+}
+.hamburger-menu{
+    position: absolute;
+    left: 10%;
+}
+.hamburger-menu i{
+    font-size: 1.2rem;
+}
+
+.profile{
+    position: absolute;
+    font-size: 2.5rem;
+    right: 8%;
+    color: rgb(111, 109, 109);
+} 
+/* search-box  */
+.search-box {
+    padding: 0% 8% ;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    width:40%;
+    color: black;
+}
+.search-box button {
+    border: none;
+    height: 65px;
+    font-size: 1.3rem;
+    width: 65px;
+    background-color:  rgb(230, 30, 77) ;
+    position: absolute;
+    right: 16.5%;
+    border-radius: 50%;
+    color: white;
+}
+.search-box input {
+    border: none;
+    background-color: rgb(240, 243, 245,0.5);
+    color: black;
+    outline: none;
+    font-size: 1.3rem;
+    text-align: center;
+    height: 85px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    flex: 1;
+    padding-right: 50px;
+}
+.search-box input::placeholder {
+    color: black;
+}
+
+.feature{
+    padding: 5% 8% 0% 8%; 
+    margin-top: 28px; 
+}
+.features {
+    padding: 0;margin: 0;
+    font-size: 1.25rem;
+    color: #8b8181;
+    scroll-behavior: smooth;
+    flex: 1;
+}
+.feature-responsive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.features button {
+    all: unset;
+    padding: 0% 2%;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 50px;
+}
+.features button:hover {
+    background-color: #c7c2c233;
+}
+.features button:focus{
+    text-decoration: underline;
+    text-underline-offset: 26px;
+    color: black;
+}
+.login-singup input {
+    margin-top: 5%;
+    border-radius: 12px;
+    height: 55px;
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
+    border: none;
+    background-color:  rgb(230, 30, 77) ;
+}
+.login-singup input::placeholder{
+    color: white;
+}
+.start-text h2{
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+.start-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.start-browse{
+    font-size: 1.3rem;
+}
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.images .img1,
+.images .img2,
+.images .img3,
+.images .img4 {
+    width: 100%;
+}
+.images img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.img-text {
+    padding: 12px 15px;
+    font-size: 1.5rem;
+    color: #2b2929;
+    font-weight: 500;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.articles{
+    margin-top: 6%;
+}
+.article-box , .article{
+    padding: 0;margin: 0;
+    font-size: 1.4rem;
+}
+.articles h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.article h3{
+    font-weight: 600;
+    text-decoration: underline;
+    color: rgb(59, 54, 54);
+}
+.article-box ul{
+    margin: 0;padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+.art-info{
+    color: rgb(128, 123, 123);
+}
+.article,.art-info {
+flex-wrap: wrap;
+}
+.heading h2{
+    font-size: 2.8rem;
+}
+.explore-more{
+    background-color: black;
+    color: white;
+    padding: 1.8% 8% 3% 8%;
+}
+.pictures{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+.pic img{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+}
+.pic-info h3 {
+  margin: 10px 0px 1px 0px; 
+  font-weight: 600;
+}
+.pic{
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: rgba(249, 249, 249, 0.15);
+}
+.pic-info{
+    margin-bottom: 23px;
+    color: rgb(217, 214, 214);
+    padding-left: 20px;
+}
+.contact-us button{
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    width: 35%;
+    background-color: rgb(249, 249, 249);
+    color: black;
+    border: none;
+}
+.contact h3{
+    font-size: 2rem;
+    margin:5% 0% 1% 0%;
+}
+.contact-info{
+    font-size: 1.6rem;
+}
+.contact-us{
+    font-family: 600;
+    margin: 3% 0% ;
+}
+.feedback{
+    font-size: 1.6rem;
+    margin: 3% 0% 5% 0%;
+}
+.feedback b{
+    text-decoration: underline;
+}
+
+
+
+
+
+.footer-content {
+    padding: 0px 48px 0px 48px;
+    font-size: 1.2rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.support h3,
+.hosting h3,
+.airbnb h3{
+    font-weight: 200;
+    color: black;
+}
+.support li,
+.hosting li,
+.airbnb li{
+    list-style: none;
+}
+.support li a,
+.hosting li a,
+.airbnb li a{
+    text-decoration: none;
+    color: rgb(62, 60, 60);
+    font-size: 1.2rem;
+}
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    font-size: 1.2rem;
+}
+.more,
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.links li a {
+    text-decoration: none;
+    color: black;
+}
+.icons ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0;padding: 0;
+}
+.icons li{
+    margin: 0;padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    
+}
+.icons li:hover{
+    background-color: #ccc;
+    border-radius: 50%;
+}
+.support li:hover,
+.hosting li:hover,
+.airbnb li:hover{
+    text-decoration: underline;
+}
+.links li:hover{
+    text-decoration: underline;
+}
+.icon-left i, .icon-right i {
+      display: none;
+    }
+    .icon-feature{opacity: 0;}
+.img1 hr,.img2 hr, .img3 hr,.img4 hr{opacity: 0;}
+@media (max-width: 744px) {
+        .right{display: none;}
+        .text h1{font-size: 2.5rem;margin-top: 1%;text-align: left;padding: 0% 8% ;}
+        .search-box{width: 70%;}
+        .search-box input{height: 60px;}
+        .search-box button{color:  rgb(230, 30, 77) ;background-color: transparent;left: 18%;}
+        .icon-feature{opacity: 1;}
+      .icon-left i, .icon-right i {
+        opacity: 1;
+        color: rgb(52, 50, 50);
+        width: 35px;height: 28px;font-size: 1.5rem; margin-right: 2px;
+        display: flex;justify-content: center; align-items: center;
+      }
+      .start-browse{display: none;}
+      .img1 hr,.img2 hr, .img3 hr,.img4 hr{opacity: 1;}
+      .img1 ,.img2 , .img3 ,.img4 {margin-top: 0%;}
+      .img{display: none;}
+      .img-text{padding: 0;margin: 0% 1% 0% 1%;color: rgb(52, 50, 50);}
+      .images{display: flex;flex-direction: column;}
+      .img-content{display: flex; flex-direction: row;margin: 2% 0% 6% 0%;align-items: center;}
+
+      .pictures{grid-template-columns: 1fr;}
+      .pic{display: flex;height: 130px; align-items: center;}
+      .pic img{width: 150px;height: 130px;}
+      .contact h3{font-size: 1.6rem;}
+      .contact-info, .feedback{font-size: 1.4rem;}
+      .contact-us button{width: 75%;}
+
+      .footer-links{flex-direction: column;}
+      .footer-bottom{flex-direction: column-reverse;}
+      .about{flex-direction: column;margin-top: 20px;}
+      .more{flex-direction: column;margin-top: 50px;}
+      .icons{display: flex;}
+      .links{margin-top: -3%;padding-left: 2.9%;}
+    }
+
+
+@media (min-width:744px) and (max-width:1024px){
+       
+
+} 
